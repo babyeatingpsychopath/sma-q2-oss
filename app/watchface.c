@@ -38,7 +38,7 @@ void watchface_draw(void) {
 
 //    asctime_r(&time_date,time_str);
 //    sprintf(time_str,"%u\n%u", (uint)current_time, (uint)ticks_acc);
-	strftime(time_str, sizeof(time_str), "%a %d.%m.%Y", &time_date);
+	strftime(time_str, sizeof(time_str), "%a %d.%b.%Y", &time_date);
 	nrf_gfx_print(p_lcd, &date_start, BLACK, time_str, p_font, true);
 
 	nrf_gfx_rect_t weather_bg=NRF_GFX_RECT(0,120,LCD_WIDTH,76);

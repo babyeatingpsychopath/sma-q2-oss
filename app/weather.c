@@ -17,9 +17,9 @@ void weather_set(SetWeather *weather){
 
 	weather_current.timestamp=weather->timestamp;
 	weather_current.condition=weather->condition;
-	weather_current.temperature=weather->temperature;
-	weather_current.temperature_min=weather->temperature_min;
-	weather_current.temperature_max=weather->temperature_max;
+	weather_current.temperature=c2f(weather->temperature);
+	weather_current.temperature_min=c2f(weather->temperature_min);
+	weather_current.temperature_max=c2f(weather->temperature_max);
 	weather_current.humidity=weather->humidity;
 
 	_time=weather_current.timestamp;

@@ -9,5 +9,4 @@
 *.zip
 components
 armgcc/_build
-gfx/screen.png
-
+armgcc/private_key.pem

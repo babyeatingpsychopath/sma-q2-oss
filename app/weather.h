@@ -17,6 +17,9 @@
 void weather_set(SetWeather *weather);
 int weather_condition_to_icon(int condition);
 
+inline int8_t c2f(int8_t c) { return (int8_t)(c*9/5+32);}
+	
+
 typedef struct forecast{
 
 	int condition;
